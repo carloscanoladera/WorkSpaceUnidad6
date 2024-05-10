@@ -7,7 +7,7 @@ public class EjemploNumerospares {
 	public static void main(String[] args) {
 	
 
-		Numeros numerosPares = (n) -> {
+		Numeros<Integer> numerosPares = (n) -> {
 			
 			int num= n.intValue();
 			
