@@ -6,6 +6,7 @@ public class FunctionalInterfaceEjemplo {
 	interface MiPrimerFunctionalInterface {
 
 		public double operacion(double a, double b);
+	
 
 		default double identity(double num) {
 

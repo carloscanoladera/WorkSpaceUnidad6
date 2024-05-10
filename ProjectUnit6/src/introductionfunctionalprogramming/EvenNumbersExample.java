@@ -2,16 +2,9 @@ package introductionfunctionalprogramming;
 
 public class EvenNumbersExample {
 
-	@FunctionalInterface
-	interface EvenNumbers {
-
-		void showEvenNumbers(int n);
-
-	}
-
 	public static void main(String[] args) {
 
-		EvenNumbers evenLambda = (n) -> {
+		Numbers evenLambda = (n) -> {
 
 			for (int i = 0; i <= n; i++) {
 
@@ -21,8 +14,10 @@ public class EvenNumbersExample {
 			}
 
 		};
+		
 
-		evenLambda.showEvenNumbers(10);
+		
+		evenLambda.unaryoperations(10);
 
 	}
 

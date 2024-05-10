@@ -1,4 +1,4 @@
-package introduccionprogramacionfuncional;
+package ejercicios;
 public class EjemploNumerospares {
 
 
