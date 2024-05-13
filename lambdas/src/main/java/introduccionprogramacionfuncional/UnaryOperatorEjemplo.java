@@ -20,7 +20,7 @@ public static void main(String[] args) {
 		};
 		
 		
-		
+
 		
 		
 		System.out.println("The factorial de 5 es: " + factorial.apply(5L));
