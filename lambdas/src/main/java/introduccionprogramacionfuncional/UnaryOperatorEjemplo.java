@@ -1,5 +1,6 @@
 package introduccionprogramacionfuncional;
 
+import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
 public class UnaryOperatorEjemplo {
@@ -19,12 +20,14 @@ public static void main(String[] args) {
 			return res;
 		};
 		
-		
-
-		
+				
 		
 		System.out.println("The factorial de 5 es: " + factorial.apply(5L));
 		
+		UnaryOperator<Long> multiplicaPorDos = (n) -> n*2;
+		
+		//PARA COMPOSICIONES USAR FUNCTION NO EL UNARYOPERATOR POR NORMA
+		Function<Long,Long> resultadoAndThen = factorial.andThen(multiplicaPorDos);
 }
 
 }

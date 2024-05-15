@@ -9,8 +9,8 @@ public class ConsumerInterface {
 			consumer
 			.andThen(i -> System.out.println("Consumer With and Then: Explica la operación anterior, el cuadrado de :" + i ));
 
-	//System.out.println("Ejecutamos el primer Consumer");
-	//consumer.accept(7);
+	System.out.println("Ejecutamos el primer Consumer");
+	consumer.accept(7);
 	System.out.println("Ejecutamos el consumer compuesto que ejecutará los dos uno detras de otro");
 	consumerWithAndThen.accept(6);
 

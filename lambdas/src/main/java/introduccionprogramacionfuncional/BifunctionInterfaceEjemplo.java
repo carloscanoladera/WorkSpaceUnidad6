@@ -17,7 +17,7 @@ public class BifunctionInterfaceEjemplo {
 		System.out.println ("Division decimal de 5 y 7:" + floatDiv.apply(5, 7));
 		
 		
-		System.out.println ("concatMayusculas interface:" + concatMayusculas.apply("String 1", "String 2"));
+		System.out.println ("concatMayusculas interface:" + concatMayusculas.apply("  String 1", "  String 2"));
 		
 		
 		
@@ -26,7 +26,7 @@ public class BifunctionInterfaceEjemplo {
 		BiFunction<String, String, String> mayusculasmastrimear= concatMayusculas.andThen(trimear);
 		
 		
-		System.out.println ("Mayusculas mas trimear " + mayusculasmastrimear.apply("  hola", "adios  "));
+		System.out.println ("Mayusculas mas trimear:" + mayusculasmastrimear.apply("  String 1", "  String 2"));
 		
 	}
 
